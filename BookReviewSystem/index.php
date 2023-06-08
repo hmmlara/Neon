@@ -50,98 +50,180 @@
 				id="navbarNav"
 			>
 				<ul class="navbar-nav">
-					<li class="nav-item">
+					<li class="nav-item active">
 						<a
 							class="nav-link"
-							href="index.html"
+							href="index.php"
 							>Home</a
 						>
 					</li>
 
-					<li class="nav-item active">
+					<li class="nav-item">
 						<a
 							class="nav-link"
-							href="AuthorPage.html"
+							href="AuthorPage.php"
 							>Author</a
 						>
 					</li>
 					<li class="nav-item">
 						<a
 							class="nav-link"
-							href="Review.html"
+							href="Review.php"
 							>Reviews</a
 						>
 					</li>
-					
+				
 					<li class="nav-item hide-in-large">
 						<a
 							class="nav-link"
-							href="#"
+							href="Profile.php"
 							>Profile</a
 						>
 					</li>
 					<li class="nav-item account">
-						<div class="avatar">
-							<img
-								src="user-avatar.jpg"
-								alt="User Avatar"
-							/>
-						</div>
+						<a href="Profile.php">
+							<div class="avatar">
+								<img
+									src="user-avatar.jpg"
+									alt="User Avatar"
+								/>
+							</div>
+						</a>
+					
 					</li>
 				</ul>
 			</div>
 		</nav>
 		<!-- search bar -->
 		<div class="container mt-4">
-			<div class="author-card-grid-view">
-				<!-- Author cards here -->
-				<div class="author-card">
-					<img
-						class="author-image"
-						src="
-                    Book-image.jpg"
-						alt="Author Image"
+			<!-- Search Bar -->
+			<div class="search-bar">
+				<div class="input-group">
+					<input
+						type="text"
+						class="form-control"
+						placeholder="Search..."
 					/>
-					<h2 class="author-name">Author Name</h2>
-					<p class="author-bio">Author Bio</p>
-					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
-						repellat accusantium quisquam magni, ducimus sequi delectus itaque
-						laborum nesciunt alias nulla minima explicabo sunt suscipit iste
-						nihil beatae aliquid hic.
-					</p>
-					<a
-						class="author-website"
-						href="https://www.author-website.com"
-						target="_blank"
-						>Visit Website</a
-					>
+					<div class="input-group-append">
+						<button
+							class="btn btn-primary"
+							type="button"
+						>
+							Search
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Filter Component -->
+			<div class="filter-component">
+				<select class="form-control filter-select">
+					<option selected>Genre..</option>
+					<option>Action</option>
+					<option>Comedy</option>
+					<option>Biography</option>
+				</select>
+			</div>
+		</div>
+		<!-- Popular Session -->
+		<div class="container mt-4">
+			<h1>Collection for May</h1>
+			<div id="book-reviews">
+				<!-- Book reviews will be dynamically populated here using JavaScript -->
+				<div class="book-card-list">
+					
+					<div class="book-card-list-view">
+						<div class="book-card">
+							<img
+								src="book-image.jpg"
+								alt="Book 1"
+							/>
+							<div class="book-card-info">
+								<div class="book-card-title">Book 1</div>
+								<div class="book-card-author">Author: John Doe</div>
+								<div class="book-card-genre">Genre: Fiction</div>
+								<div class="book-card-description">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Nullam auctor semper ligula, sed tempor ipsum volutpat eu.
+									<a href="BookDetail.php">...See More</a>
+
+								</div>
+							</div>
+						</div>
+						<div class="book-card">
+							<img
+								src="book-image.jpg"
+								alt="Book 2"
+							/>
+							<div class="book-card-info">
+								<div class="book-card-title">Book 2</div>
+								<div class="book-card-author">Author: Jane Smith</div>
+								<div class="book-card-genre">Genre: Mystery</div>
+								<div class="book-card-description">
+									Vestibulum convallis interdum sapien, ac efficitur metus
+									congue eget. Proin fringilla mauris sed mi pellentesque, nec
+									suscipit odio tristique.
+									<a href="#">...See More</a>
+
+								</div>
+							</div>
+						</div>
+						<div class="book-card">
+							<img
+								src="book-image.jpg"
+								alt="Book 3"
+							/>
+							<div class="book-card-info">
+								<div class="book-card-title">Book 3</div>
+								<div class="book-card-author">Author: Michael Johnson</div>
+								<div class="book-card-genre">Genre: Fantasy</div>
+								<div class="book-card-description">
+									Donec convallis dapibus felis, sed tristique orci viverra sit
+									amet. Nam sagittis augue eu turpis aliquam tempus.
+									<a href="BookDetail.php">...See More</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+		<!-- Ai chat Bot Iframe -->
+		<!-- <div
+			style="
+				height: 500px;
+				width: 300px;
+				position: fixed;
+				right: 80px;
+				bottom: 50px;
+				z-index: 9;
+			"
+		>
+			<iframe
+				src="https://ora.ai/embed/3597c9be-7185-46fc-a0fc-ccd74b9796d6"
+				width="100%"
+				height="100%"
+				style="border: 0; border-radius: 4px"
+			/>
+		</div> -->
 
 		<!-- Books -->
 		<div class="container">
 			<div class="book-card-list">
-				<!-- Search Bar -->
-				<div class="search-bar">
-					<div class="input-group">
-						<input
-							type="text"
-							class="form-control"
-							placeholder="Search..."
-						/>
-						<div class="input-group-append">
-							<button
-								class="btn btn-primary"
-								type="button"
-							>
-								Search
-							</button>
-						</div>
-					</div>
+				<div class="view-options">
+					<button
+						class="view-option-btn active"
+						data-update="list"
+					>
+						Lastest Update
+					</button>
+					<button
+						class="view-option-btn"
+						data-radom="grid"
+					>
+						Content at redom
+					</button>
 				</div>
-
 				<div class="book-card-grid">
 					<div class="book-card">
 						<div class="book-card-image">
@@ -223,9 +305,11 @@
 							<p class="book-card-genre">Genre: Fantasy</p>
 						</div>
 					</div>
+				
 				</div>
 				<div class="mt-4" style="display: flex;justify-content: center; width: 100%;">
 					<a href="" class="btn btn-primary m-auto" >Load More</a>
+
 				</div>
 			</div>
 		</div>

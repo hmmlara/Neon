@@ -29,7 +29,7 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<a
 				class="navbar-brand-logo"
-				href="index.html"
+				href="index.php"
 			>
 				<img
 					src="logo.png"
@@ -57,7 +57,7 @@
 					<li class="nav-item">
 						<a
 							class="nav-link"
-							href="index.html"
+							href="index.php"
 							>Home</a
 						>
 					</li>
@@ -65,14 +65,14 @@
 					<li class="nav-item active">
 						<a
 							class="nav-link"
-							href="AuthorPage.html"
+							href="AuthorPage.php"
 							>Author</a
 						>
 					</li>
 					<li class="nav-item">
 						<a
 							class="nav-link"
-							href="Review.html"
+							href="Review.php"
 							>Reviews</a
 						>
 					</li>
@@ -80,12 +80,12 @@
 					<li class="nav-item hide-in-large">
 						<a
 							class="nav-link"
-							href="Profile.html"
+							href="Profile.php"
 							>Profile</a
 						>
 					</li>
 					<li class="nav-item account">
-						<a href="Profile.html">
+						<a href="Profile.php">
 							<div class="avatar">
 								<img
 									src="user-avatar.jpg"
@@ -140,19 +140,19 @@
                     <img class="author-image" src="book-image.jpg" alt="Author Image">
                     <h2 class="author-name">Author Name</h2>
                     <p class="author-bio">Author Bio</p>
-                    <a class="author-website" href="AuthorDetail.html" target="_blank">Author's Books</a>
+                    <a class="author-website" href="AuthorDetail.php" target="_blank">Author's Books</a>
                   </div>
                   <div class="author-card">
                     <img class="author-image" src="book-image.jpg" alt="Author Image">
                     <h2 class="author-name">Author Name</h2>
                     <p class="author-bio">Author Bio</p>
-                    <a class="author-website" href="AuthorDetail.html" target="_blank">Author's Books</a>
+                    <a class="author-website" href="AuthorDetail.php" target="_blank">Author's Books</a>
                   </div>
                   <div class="author-card">
                     <img class="author-image" src="book-image.jpg" alt="Author Image">
                     <h2 class="author-name">Author Name</h2>
                     <p class="author-bio">Author Bio</p>
-                    <a class="author-website" href="AuthorDetail.html" target="_blank">Author's Books</a>
+                    <a class="author-website" href="AuthorDetail.php" target="_blank">Author's Books</a>
                   </div>
             </div>
 			<div class="mt-4" style="display: flex;justify-content: center; width: 100%;">

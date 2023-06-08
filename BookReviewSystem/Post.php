@@ -58,7 +58,7 @@
 					<li class="nav-item active">
 						<a
 							class="nav-link"
-							href="index.html"
+							href="index.php"
 							>Home</a
 						>
 					</li>
@@ -66,14 +66,14 @@
 					<li class="nav-item">
 						<a
 							class="nav-link"
-							href="AuthorPage.html"
+							href="AuthorPage.php"
 							>Author</a
 						>
 					</li>
 					<li class="nav-item">
 						<a
 							class="nav-link"
-							href="Review.html"
+							href="Review.php"
 							>Reviews</a
 						>
 					</li>
@@ -81,12 +81,12 @@
 					<li class="nav-item hide-in-large">
 						<a
 							class="nav-link"
-							href="Profile.html"
+							href="Profile.php"
 							>Profile</a
 						>
 					</li>
 					<li class="nav-item account">
-						<a href="Profile.html">
+						<a href="Profile.php">
 							<div class="avatar">
 								<img
 									src="user-avatar.jpg"
@@ -113,7 +113,7 @@
 				</div>
                 <div class="container">
                     <div class="d-flex flex-wrap">
-                        <a href="BookDetail.html">
+                        <a href="BookDetail.php">
                             <div class="book-details">
                                 <img
                                     src="book-image.jpg"
@@ -125,7 +125,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="BookDetail.html">
+                        <a href="BookDetail.php">
                             <div class="book-details">
                                 <img
                                     src="book-image.jpg"

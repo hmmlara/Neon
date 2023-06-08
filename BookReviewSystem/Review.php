@@ -58,7 +58,7 @@
 					<li class="nav-item">
 						<a
 							class="nav-link"
-							href="index.html"
+							href="index.php"
 							>Home</a
 						>
 					</li>
@@ -66,14 +66,14 @@
 					<li class="nav-item">
 						<a
 							class="nav-link"
-							href="AuthorPage.html"
+							href="AuthorPage.php"
 							>Author</a
 						>
 					</li>
 					<li class="nav-item active">
 						<a
 							class="nav-link"
-							href="Review.html"
+							href="Review.php"
 							>Reviews</a
 						>
 					</li>
@@ -81,12 +81,12 @@
 					<li class="nav-item hide-in-large">
 						<a
 							class="nav-link"
-							href="Profile.html"
+							href="Profile.php"
 							>Profile</a
 						>
 					</li>
 					<li class="nav-item account">
-						<a href="Profile.html">
+						<a href="Profile.php">
 							<div class="avatar">
 								<img
 									src="user-avatar.jpg"
@@ -99,7 +99,7 @@
 			</div>
 		</nav>
 
-		<a href="Post.html" class="btn btn-primary float-right mt-2 mr-2">Post</a>
+		<a href="Post.php" class="btn btn-primary float-right mt-2 mr-2">Post</a>
 
 		<!-- Review  Post -->
 		<div class="container mt-4">
@@ -119,7 +119,7 @@
 					</div>
 					<div class="review-content">
 						<div class="d-flex flex-wrap">
-							<a href="BookDetail.html">
+							<a href="BookDetail.php">
 								<div class="book-details">
 									<img
 										src="book-image.jpg"
@@ -131,155 +131,7 @@
 									</div>
 								</div>
 							</a>
-							<a href="BookDetail.html">
-								<div class="book-details">
-									<img
-										src="book-image.jpg"
-										alt="Book Cover"
-									/>
-									<div class="book-info">
-										<h2>The Book Title</h2>
-										<p>by Author Name</p>
-									</div>
-								</div>
-							</a>
-						</div>
-
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-							scelerisque volutpat nisl vitae vestibulum. Duis vel velit a justo
-							tincidunt dictum in vitae ante. Proin lobortis pulvinar diam, nec
-							dapibus felis vestibulum ut. Sed euismod nibh quis ligula
-							pellentesque, at iaculis sem tincidunt.
-						</p>
-					</div>
-					<div class="review-actions position-relative">
-						<button class="like-btn" onclick="toggleLike(this)">
-							<i class="fas fa-thumbs-up"></i>
-							<span class="like-text">Like</span>
-							<span class="like-count">10</span>
-						  </button>
-						<button class="comment-btn">
-							<i class="fas fa-comment"></i> Comment
-						</button>
-						<div class="who-viewed">
-							<img
-								src="user-avatar.jpg"
-								alt="Avatar 1"
-								class="Profile-avatar"
-							/>
-							<img
-								src="user-avatar.jpg"
-								alt="Avatar 2"
-								class="Profile-avatar"
-							/>
-							<span class="view-count">+3</span>
-						</div>
-					</div>
-					<div class="comments">
-						<h4>Comments</h4>
-						<ul class="comment-list">
-							<li class="comment">
-								<div class="comment-avatar">
-									<img
-										src="avatar.jpg"
-										alt="User Avatar"
-									/>
-								</div>
-								<div class="comment-content">
-									<p class="comment-text">This book was amazing!</p>
-									<span class="comment-meta">- John Doe</span>
-								</div>
-							</li>
-							<li class="comment">
-								<div class="comment-avatar">
-									<img
-										src="avatar.jpg"
-										alt="User Avatar"
-									/>
-								</div>
-								<div class="comment-content">
-									<p class="comment-text">Highly recommended!</p>
-									<span class="comment-meta">- Jane Smith</span>
-								</div>
-							</li>
-							<li class="comment">
-								<div class="comment-avatar">
-									<img
-										src="avatar.jpg"
-										alt="User Avatar"
-									/>
-								</div>
-								<div class="comment-content">
-									<p class="comment-text">Highly recommended!</p>
-									<span class="comment-meta">- Jane Smith</span>
-								</div>
-							</li>
-							<li class="comment">
-								<div class="comment-avatar">
-									<img
-										src="avatar.jpg"
-										alt="User Avatar"
-									/>
-								</div>
-								<div class="comment-content">
-									<p class="comment-text">Highly recommended!</p>
-									<span class="comment-meta">- Jane Smith</span>
-								</div>
-							</li>
-							<li class="comment">
-								<div class="comment-avatar">
-									<img
-										src="avatar.jpg"
-										alt="User Avatar"
-									/>
-								</div>
-								<div class="comment-content">
-									<p class="comment-text">Highly recommended!</p>
-									<span class="comment-meta">- Jane Smith</span>
-								</div>
-							</li>
-							<!-- Add more comment list items as needed -->
-						</ul>
-						<button class="load-more-btn btn">Load More</button>
-		
-						<form class="comment-form">
-							<textarea
-								class="form-control"
-								placeholder="Add a comment"
-							></textarea>
-							<button class="btn btn-primary">Submit</button>
-						</form>
-					</div>
-				</div>
-				<div class="review">
-					<div class="review-header">
-						<div class="user-profile">
-							<img
-								src="user-avatar.jpg"
-								alt="User Avatar"
-							/>
-							<div class="user-details">
-								<h3>John Doe</h3>
-								<p>June 1, 2023</p>
-							</div>
-						</div>
-					</div>
-					<div class="review-content">
-						<div class="d-flex flex-wrap">
-							<a href="BookDetail.html">
-								<div class="book-details">
-									<img
-										src="book-image.jpg"
-										alt="Book Cover"
-									/>
-									<div class="book-info">
-										<h2>The Book Title</h2>
-										<p>by Author Name</p>
-									</div>
-								</div>
-							</a>
-							<a href="BookDetail.html">
+							<a href="BookDetail.php">
 								<div class="book-details">
 									<img
 										src="book-image.jpg"
@@ -415,7 +267,7 @@
 					</div>
 					<div class="review-content">
 						<div class="d-flex flex-wrap">
-							<a href="BookDetail.html">
+							<a href="BookDetail.php">
 								<div class="book-details">
 									<img
 										src="book-image.jpg"
@@ -427,7 +279,155 @@
 									</div>
 								</div>
 							</a>
-							<a href="BookDetail.html">
+							<a href="BookDetail.php">
+								<div class="book-details">
+									<img
+										src="book-image.jpg"
+										alt="Book Cover"
+									/>
+									<div class="book-info">
+										<h2>The Book Title</h2>
+										<p>by Author Name</p>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+							scelerisque volutpat nisl vitae vestibulum. Duis vel velit a justo
+							tincidunt dictum in vitae ante. Proin lobortis pulvinar diam, nec
+							dapibus felis vestibulum ut. Sed euismod nibh quis ligula
+							pellentesque, at iaculis sem tincidunt.
+						</p>
+					</div>
+					<div class="review-actions position-relative">
+						<button class="like-btn" onclick="toggleLike(this)">
+							<i class="fas fa-thumbs-up"></i>
+							<span class="like-text">Like</span>
+							<span class="like-count">10</span>
+						  </button>
+						<button class="comment-btn">
+							<i class="fas fa-comment"></i> Comment
+						</button>
+						<div class="who-viewed">
+							<img
+								src="user-avatar.jpg"
+								alt="Avatar 1"
+								class="Profile-avatar"
+							/>
+							<img
+								src="user-avatar.jpg"
+								alt="Avatar 2"
+								class="Profile-avatar"
+							/>
+							<span class="view-count">+3</span>
+						</div>
+					</div>
+					<div class="comments">
+						<h4>Comments</h4>
+						<ul class="comment-list">
+							<li class="comment">
+								<div class="comment-avatar">
+									<img
+										src="avatar.jpg"
+										alt="User Avatar"
+									/>
+								</div>
+								<div class="comment-content">
+									<p class="comment-text">This book was amazing!</p>
+									<span class="comment-meta">- John Doe</span>
+								</div>
+							</li>
+							<li class="comment">
+								<div class="comment-avatar">
+									<img
+										src="avatar.jpg"
+										alt="User Avatar"
+									/>
+								</div>
+								<div class="comment-content">
+									<p class="comment-text">Highly recommended!</p>
+									<span class="comment-meta">- Jane Smith</span>
+								</div>
+							</li>
+							<li class="comment">
+								<div class="comment-avatar">
+									<img
+										src="avatar.jpg"
+										alt="User Avatar"
+									/>
+								</div>
+								<div class="comment-content">
+									<p class="comment-text">Highly recommended!</p>
+									<span class="comment-meta">- Jane Smith</span>
+								</div>
+							</li>
+							<li class="comment">
+								<div class="comment-avatar">
+									<img
+										src="avatar.jpg"
+										alt="User Avatar"
+									/>
+								</div>
+								<div class="comment-content">
+									<p class="comment-text">Highly recommended!</p>
+									<span class="comment-meta">- Jane Smith</span>
+								</div>
+							</li>
+							<li class="comment">
+								<div class="comment-avatar">
+									<img
+										src="avatar.jpg"
+										alt="User Avatar"
+									/>
+								</div>
+								<div class="comment-content">
+									<p class="comment-text">Highly recommended!</p>
+									<span class="comment-meta">- Jane Smith</span>
+								</div>
+							</li>
+							<!-- Add more comment list items as needed -->
+						</ul>
+						<button class="load-more-btn btn">Load More</button>
+		
+						<form class="comment-form">
+							<textarea
+								class="form-control"
+								placeholder="Add a comment"
+							></textarea>
+							<button class="btn btn-primary">Submit</button>
+						</form>
+					</div>
+				</div>
+				<div class="review">
+					<div class="review-header">
+						<div class="user-profile">
+							<img
+								src="user-avatar.jpg"
+								alt="User Avatar"
+							/>
+							<div class="user-details">
+								<h3>John Doe</h3>
+								<p>June 1, 2023</p>
+							</div>
+						</div>
+					</div>
+					<div class="review-content">
+						<div class="d-flex flex-wrap">
+							<a href="BookDetail.php">
+								<div class="book-details">
+									<img
+										src="book-image.jpg"
+										alt="Book Cover"
+									/>
+									<div class="book-info">
+										<h2>The Book Title</h2>
+										<p>by Author Name</p>
+									</div>
+								</div>
+							</a>
+							<a href="BookDetail.php">
 								<div class="book-details">
 									<img
 										src="book-image.jpg"
