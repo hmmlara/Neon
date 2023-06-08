@@ -116,20 +116,7 @@
 					<!-- Books -->
 					<div class="container">
 						<div class="book-card-list">
-							<div class="view-options">
-								<button
-									class="view-option-btn active"
-									data-update="list"
-								>
-									Lastest Update
-								</button>
-								<button
-									class="view-option-btn"
-									data-radom="grid"
-								>
-									Content at redom
-								</button>
-							</div>
+						
 							<div class="book-card-grid">
 								<div class="book-card">
 									<div class="book-card-image">
