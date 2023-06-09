@@ -1,242 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Book Review System</title>
-		<link
-			rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="style.css"
-		/>
-	</head>
-	<body>
-		<!-- Navigation bar -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a
-				class="navbar-brand-logo"
-				href="#"
-			>
-				<img
-					src="logo.png"
-					style="width: 200px; height: 100px"
-					alt="Book Review System Logo"
-				/>
-			</a>
 
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarNav"
-				aria-controls="navbarNav"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div
-				class="collapse navbar-collapse justify-content-end"
-				id="navbarNav"
-			>
-				<ul class="navbar-nav">
-					<li class="nav-item active">
-						<a
-							class="nav-link"
-							href="index.php"
-							>Home</a
-						>
-					</li>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Book Review System</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="style.css" />
+</head>
 
-					<li class="nav-item">
-						<a
-							class="nav-link"
-							href="AuthorPage.php"
-							>Author</a
-						>
-					</li>
-					<li class="nav-item">
-						<a
-							class="nav-link"
-							href="Review.php"
-							>Reviews</a
-						>
-					</li>
-				
-					<li class="nav-item hide-in-large">
-						<a
-							class="nav-link"
-							href="Profile.php"
-							>Profile</a
-						>
-					</li>
-					<li class="nav-item account">
-						<a href="Profile.php">
-							<div class="avatar">
-								<img
-									src="user-avatar.jpg"
-									alt="User Avatar"
-								/>
-							</div>
-						</a>
-					
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<!-- search bar -->
-		<div class="container mt-4">
-			<!-- Search Bar -->
-			<div class="search-bar">
-				<div class="input-group">
-					<input
-						type="text"
-						class="form-control"
-						placeholder="Search..."
-					/>
-					<div class="input-group-append">
-						<button
-							class="btn btn-primary"
-							type="button"
-						>
-							Search
-						</button>
-					</div>
+<body>
+	<!-- Navigation bar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand-logo" href="#">
+			<img src="logo.png" style="width: 200px; height: 100px" alt="Book Review System Logo" />
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.php">Home</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="AuthorPage.php">Author</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Review.php">Reviews</a>
+				</li>
+
+				<li class="nav-item hide-in-large">
+					<a class="nav-link" href="Profile.php">Profile</a>
+				</li>
+				<li class="nav-item account">
+					<a href="Profile.php">
+						<div class="avatar">
+							<img src="user-avatar.jpg" alt="User Avatar" />
+						</div>
+					</a>
+
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- search bar -->
+	<div class="container mt-4">
+		<!-- Search Bar -->
+		<div class="search-bar">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Search..." />
+				<div class="input-group-append">
+					<button class="btn btn-primary" type="button">
+						Search
+					</button>
 				</div>
 			</div>
-
-			<!-- Filter Component -->
-			<div class="filter-component">
-				<select class="form-control filter-select">
-					<option selected>Genre..</option>
-					<option>Action</option>
-					<option>Comedy</option>
-					<option>Biography</option>
-				</select>
-			</div>
 		</div>
-		<!-- Popular Session -->
-		<div class="container mt-4">
-			<h1>Collection for May</h1>
-			<div id="book-reviews">
-				<!-- Book reviews will be dynamically populated here using JavaScript -->
-				<div class="book-card-list">
-					
-					<div class="book-card-list-view">
-						<div class="book-card">
-							<img
-								src="book-image.jpg"
-								alt="Book 1"
-							/>
-							<div class="book-card-info">
-								<div class="book-card-title">Book 1</div>
-								<div class="book-card-author">Author: John Doe</div>
-								<div class="book-card-genre">Genre: Fiction</div>
-								<div class="book-card-description">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Nullam auctor semper ligula, sed tempor ipsum volutpat eu.
-									<a href="BookDetail.php">...See More</a>
 
-								</div>
-							</div>
+		<!-- Filter Component -->
+		<div class="filter-component">
+			<select class="form-control filter-select">
+				<option selected>Genre..</option>
+				<option>Action</option>
+				<option>Comedy</option>
+				<option>Biography</option>
+			</select>
+		</div>
+	</div>
+	<!-- Popular Session -->
+	<div class="container mt-4">
+		<h1>Collection for May</h1>
+		<div class="container">
+			<div class="container swiper">
+				<h2>Biography</h2>
+				<div class=" swiper-wrapper">
+					<div class="card swiper-slide">
+						<img src="book-image.jpg" class="card-img-top" alt="Book 1">
+						<div class="card-body">
+							<h5 class="card-title">Book 1</h5>
+							<p class="card-text">Description of Book 1</p>
 						</div>
-						<div class="book-card">
-							<img
-								src="book-image.jpg"
-								alt="Book 2"
-							/>
-							<div class="book-card-info">
-								<div class="book-card-title">Book 2</div>
-								<div class="book-card-author">Author: Jane Smith</div>
-								<div class="book-card-genre">Genre: Mystery</div>
-								<div class="book-card-description">
-									Vestibulum convallis interdum sapien, ac efficitur metus
-									congue eget. Proin fringilla mauris sed mi pellentesque, nec
-									suscipit odio tristique.
-									<a href="#">...See More</a>
-
-								</div>
-							</div>
+					</div>
+					<div class="card swiper-slide">
+						<img src="book-image.jpg" class="card-img-top" alt="Book 2">
+						<div class="card-body">
+							<h5 class="card-title">Book 2</h5>
+							<p class="card-text">Description of Book 2</p>
 						</div>
-						<div class="book-card">
-							<img
-								src="book-image.jpg"
-								alt="Book 3"
-							/>
-							<div class="book-card-info">
-								<div class="book-card-title">Book 3</div>
-								<div class="book-card-author">Author: Michael Johnson</div>
-								<div class="book-card-genre">Genre: Fantasy</div>
-								<div class="book-card-description">
-									Donec convallis dapibus felis, sed tristique orci viverra sit
-									amet. Nam sagittis augue eu turpis aliquam tempus.
-									<a href="BookDetail.php">...See More</a>
-								</div>
-							</div>
+					</div>
+					<div class="card swiper-slide">
+						<img src="book-image.jpg" class="card-img-top" alt="Book 3">
+						<div class="card-body">
+							<h5 class="card-title">Book 3</h5>
+							<p class="card-text">Description of Book 3</p>
+						</div>
+					</div>
+					<div class="card swiper-slide">
+						<img src="book-image.jpg" class="card-img-top" alt="Book 3">
+						<div class="card-body">
+							<h5 class="card-title">Book 3</h5>
+							<p class="card-text">Description of Book 3</p>
+						</div>
+					</div>
+					<div class="card swiper-slide">
+						<img src="book-image.jpg" class="card-img-top" alt="Book 3">
+						<div class="card-body">
+							<h5 class="card-title">Book 3</h5>
+							<p class="card-text">Description of Book 3</p>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="container swiper">
+				<h2>Misctry</h2>
+				<div class=" swiper-wrapper">
+					<div class="card swiper-slide">
+						<img src="book-image.jpg" class="card-img-top" alt="Book 1">
+						<div class="card-body">
+							<h5 class="card-title">Book 1</h5>
+							<p class="card-text">Description of Book 1</p>
+						</div>
+					</div>
+					<div class="card swiper-slide">
+						<img src="book-image.jpg" class="card-img-top" alt="Book 2">
+						<div class="card-body">
+							<h5 class="card-title">Book 2</h5>
+							<p class="card-text">Description of Book 2</p>
+						</div>
+					</div>
+					<div class="card swiper-slide">
+						<img src="book-image.jpg" class="card-img-top" alt="Book 3">
+						<div class="card-body">
+							<h5 class="card-title">Book 3</h5>
+							<p class="card-text">Description of Book 3</p>
+						</div>
+					</div>
+					<div class="card swiper-slide">
+						<img src="book-image.jpg" class="card-img-top" alt="Book 3">
+						<div class="card-body">
+							<h5 class="card-title">Book 3</h5>
+							<p class="card-text">Description of Book 3</p>
+						</div>
+					</div>
+					<div class="card swiper-slide">
+						<img src="book-image.jpg" class="card-img-top" alt="Book 3">
+						<div class="card-body">
+							<h5 class="card-title">Book 3</h5>
+							<p class="card-text">Description of Book 3</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container swiper">
+				<h2>Finestry</h2>
+				<div class=" swiper-wrapper">
+					<div class="card swiper-slide">
+						<img src="book-image.jpg" class="card-img-top" alt="Book 1">
+						<div class="card-body">
+							<h5 class="card-title">Book 1</h5>
+							<p class="card-text">Description of Book 1</p>
+						</div>
+					</div>
+					<div class="card swiper-slide">
+						<img src="book-image.jpg" class="card-img-top" alt="Book 2">
+						<div class="card-body">
+							<h5 class="card-title">Book 2</h5>
+							<p class="card-text">Description of Book 2</p>
+						</div>
+					</div>
+					<div class="card swiper-slide">
+						<img src="book-image.jpg" class="card-img-top" alt="Book 3">
+						<div class="card-body">
+							<h5 class="card-title">Book 3</h5>
+							<p class="card-text">Description of Book 3</p>
+						</div>
+					</div>
+					<div class="card swiper-slide">
+						<img src="book-image.jpg" class="card-img-top" alt="Book 3">
+						<div class="card-body">
+							<h5 class="card-title">Book 3</h5>
+							<p class="card-text">Description of Book 3</p>
+						</div>
+					</div>
+					<div class="card swiper-slide">
+						<img src="book-image.jpg" class="card-img-top" alt="Book 3">
+						<div class="card-body">
+							<h5 class="card-title">Book 3</h5>
+							<p class="card-text">Description of Book 3</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="mt-4" style="display: flex;justify-content: center; width: 100%;">
+					<a href="collection" class="btn btn-primary m-auto">See All</a>
+
+				</div>
+			</div>
+
+
 		</div>
-		<!-- Ai chat Bot Iframe -->
-		<!-- <div
-			style="
-				height: 500px;
-				width: 300px;
-				position: fixed;
-				right: 80px;
-				bottom: 50px;
-				z-index: 9;
-			"
-		>
-			<iframe
-				src="https://ora.ai/embed/3597c9be-7185-46fc-a0fc-ccd74b9796d6"
-				width="100%"
-				height="100%"
-				style="border: 0; border-radius: 4px"
-			/>
-		</div> -->
 
 		<!-- Books -->
 		<div class="container">
 			<div class="book-card-list">
 				<div class="view-options">
-					<button
-						class="view-option-btn active"
-						data-update="list"
-					>
+					<button class="view-option-btn active" data-update="list">
 						Lastest Update
 					</button>
-					<button
-						class="view-option-btn"
-						data-radom="grid"
-					>
+					<button class="view-option-btn" data-radom="grid">
 						Content at redom
 					</button>
 				</div>
 				<div class="book-card-grid">
 					<div class="book-card">
 						<div class="book-card-image">
-							<img
-								src="book-image.jpg"
-								alt="Book 1"
-							/>
+							<img src="book-image.jpg" alt="Book 1" />
 							<div class="book-card-overlay">
-								<a
-									href="#"
-									class="book-card-button"
-									>Read More</a
-								>
+								<a href="#" class="book-card-button">Read More</a>
 							</div>
 						</div>
 						<div class="book-card-info">
@@ -247,16 +233,9 @@
 					</div>
 					<div class="book-card">
 						<div class="book-card-image">
-							<img
-								src="book-image.jpg"
-								alt="Book 2"
-							/>
+							<img src="book-image.jpg" alt="Book 2" />
 							<div class="book-card-overlay">
-								<a
-									href="#"
-									class="book-card-button"
-									>Read More</a
-								>
+								<a href="#" class="book-card-button">Read More</a>
 							</div>
 						</div>
 						<div class="book-card-info">
@@ -267,16 +246,9 @@
 					</div>
 					<div class="book-card">
 						<div class="book-card-image">
-							<img
-								src="book-image.jpg"
-								alt="Book 3"
-							/>
+							<img src="book-image.jpg" alt="Book 3" />
 							<div class="book-card-overlay">
-								<a
-									href="#"
-									class="book-card-button"
-									>Read More</a
-								>
+								<a href="#" class="book-card-button">Read More</a>
 							</div>
 						</div>
 						<div class="book-card-info">
@@ -287,16 +259,9 @@
 					</div>
 					<div class="book-card">
 						<div class="book-card-image">
-							<img
-								src="book-image.jpg"
-								alt="Book 3"
-							/>
+							<img src="book-image.jpg" alt="Book 3" />
 							<div class="book-card-overlay">
-								<a
-									href="#"
-									class="book-card-button"
-									>Read More</a
-								>
+								<a href="#" class="book-card-button">Read More</a>
 							</div>
 						</div>
 						<div class="book-card-info">
@@ -305,10 +270,10 @@
 							<p class="book-card-genre">Genre: Fantasy</p>
 						</div>
 					</div>
-				
+
 				</div>
 				<div class="mt-4" style="display: flex;justify-content: center; width: 100%;">
-					<a href="" class="btn btn-primary m-auto" >Load More</a>
+					<a href="" class="btn btn-primary m-auto">Load More</a>
 
 				</div>
 			</div>
@@ -329,50 +294,26 @@
 						<div class="Quick-Link">
 							<ul>
 								<li class="">
-									<a
-										href="#"
-										class=""
-										>FAQ</a
-									>
+									<a href="#" class="">FAQ</a>
 								</li>
 								<li class="">
-									<a
-										href="#"
-										class=""
-										>Support</a
-									>
+									<a href="#" class="">Support</a>
 								</li>
 
 								<li class="">
-									<a
-										href="#"
-										class=""
-										>Contact Us</a
-									>
+									<a href="#" class="">Contact Us</a>
 								</li>
 							</ul>
 							<ul>
 								<li class="">
-									<a
-										href="#"
-										class=""
-										>About us</a
-									>
+									<a href="#" class="">About us</a>
 								</li>
 								<li class="">
-									<a
-										href="#"
-										class=""
-										>BookMark</a
-									>
+									<a href="#" class="">BookMark</a>
 								</li>
 
 								<li class="">
-									<a
-										href="#"
-										class=""
-										>Profile</a
-									>
+									<a href="#" class="">Profile</a>
 								</li>
 							</ul>
 						</div>
@@ -404,6 +345,16 @@
 		<!-- JavaScript -->
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script type="module">
+			import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+
+			const swiper = new Swiper('.swiper', {
+				slidesPerView: '3',
+				spaceBetween: 20,
+
+			});		</script>
 		<script src="app.js"></script>
-	</body>
+</body>
+
 </html>
