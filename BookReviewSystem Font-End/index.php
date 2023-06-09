@@ -5,9 +5,10 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Book Review System</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="style.css" />
 </head>
 
@@ -76,140 +77,142 @@
 	<!-- Popular Session -->
 	<div class="container mt-4">
 		<h1>Collection for May</h1>
-		<div class="container">
-			<div class="container swiper">
-				<h2>Biography</h2>
-				<div class=" swiper-wrapper">
-					<div class="card swiper-slide">
-						<img src="book-image.jpg" class="card-img-top" alt="Book 1">
-						<div class="card-body">
-							<h5 class="card-title">Book 1</h5>
-							<p class="card-text">Description of Book 1</p>
-						</div>
+
+		<div class="container swiper">
+			<h2>Biography</h2>
+			<div class=" swiper-wrapper">
+				<div class="card swiper-slide">
+					<img src="book-image.jpg" class="card-img-top" alt="Book 1">
+					<div class="card-body">
+						<h5 class="card-title">Book 1</h5>
+						<p class="card-text">Description of Book 1</p>
 					</div>
-					<div class="card swiper-slide">
-						<img src="book-image.jpg" class="card-img-top" alt="Book 2">
-						<div class="card-body">
-							<h5 class="card-title">Book 2</h5>
-							<p class="card-text">Description of Book 2</p>
-						</div>
+				</div>
+				<div class="card swiper-slide">
+					<img src="book-image.jpg" class="card-img-top" alt="Book 2">
+					<div class="card-body">
+						<h5 class="card-title">Book 2</h5>
+						<p class="card-text">Description of Book 2</p>
 					</div>
-					<div class="card swiper-slide">
-						<img src="book-image.jpg" class="card-img-top" alt="Book 3">
-						<div class="card-body">
-							<h5 class="card-title">Book 3</h5>
-							<p class="card-text">Description of Book 3</p>
-						</div>
+				</div>
+				<div class="card swiper-slide">
+					<img src="book-image.jpg" class="card-img-top" alt="Book 3">
+					<div class="card-body">
+						<h5 class="card-title">Book 3</h5>
+						<p class="card-text">Description of Book 3</p>
 					</div>
-					<div class="card swiper-slide">
-						<img src="book-image.jpg" class="card-img-top" alt="Book 3">
-						<div class="card-body">
-							<h5 class="card-title">Book 3</h5>
-							<p class="card-text">Description of Book 3</p>
-						</div>
+				</div>
+				<div class="card swiper-slide">
+					<img src="book-image.jpg" class="card-img-top" alt="Book 3">
+					<div class="card-body">
+						<h5 class="card-title">Book 3</h5>
+						<p class="card-text">Description of Book 3</p>
 					</div>
-					<div class="card swiper-slide">
-						<img src="book-image.jpg" class="card-img-top" alt="Book 3">
-						<div class="card-body">
-							<h5 class="card-title">Book 3</h5>
-							<p class="card-text">Description of Book 3</p>
-						</div>
+				</div>
+				<div class="card swiper-slide">
+					<img src="book-image.jpg" class="card-img-top" alt="Book 3">
+					<div class="card-body">
+						<h5 class="card-title">Book 3</h5>
+						<p class="card-text">Description of Book 3</p>
 					</div>
 				</div>
 			</div>
-			<div class="container swiper">
-				<h2>Misctry</h2>
-				<div class=" swiper-wrapper">
-					<div class="card swiper-slide">
-						<img src="book-image.jpg" class="card-img-top" alt="Book 1">
-						<div class="card-body">
-							<h5 class="card-title">Book 1</h5>
-							<p class="card-text">Description of Book 1</p>
-						</div>
+		</div>
+		<div class="container swiper">
+			<h2>Misctry</h2>
+			<div class=" swiper-wrapper">
+				<div class="card swiper-slide">
+					<img src="book-image.jpg" class="card-img-top" alt="Book 1">
+					<div class="card-body">
+						<h5 class="card-title">Book 1</h5>
+						<p class="card-text">Description of Book 1</p>
 					</div>
-					<div class="card swiper-slide">
-						<img src="book-image.jpg" class="card-img-top" alt="Book 2">
-						<div class="card-body">
-							<h5 class="card-title">Book 2</h5>
-							<p class="card-text">Description of Book 2</p>
-						</div>
+				</div>
+				<div class="card swiper-slide">
+					<img src="book-image.jpg" class="card-img-top" alt="Book 2">
+					<div class="card-body">
+						<h5 class="card-title">Book 2</h5>
+						<p class="card-text">Description of Book 2</p>
 					</div>
-					<div class="card swiper-slide">
-						<img src="book-image.jpg" class="card-img-top" alt="Book 3">
-						<div class="card-body">
-							<h5 class="card-title">Book 3</h5>
-							<p class="card-text">Description of Book 3</p>
-						</div>
+				</div>
+				<div class="card swiper-slide">
+					<img src="book-image.jpg" class="card-img-top" alt="Book 3">
+					<div class="card-body">
+						<h5 class="card-title">Book 3</h5>
+						<p class="card-text">Description of Book 3</p>
 					</div>
-					<div class="card swiper-slide">
-						<img src="book-image.jpg" class="card-img-top" alt="Book 3">
-						<div class="card-body">
-							<h5 class="card-title">Book 3</h5>
-							<p class="card-text">Description of Book 3</p>
-						</div>
+				</div>
+				<div class="card swiper-slide">
+					<img src="book-image.jpg" class="card-img-top" alt="Book 3">
+					<div class="card-body">
+						<h5 class="card-title">Book 3</h5>
+						<p class="card-text">Description of Book 3</p>
 					</div>
-					<div class="card swiper-slide">
-						<img src="book-image.jpg" class="card-img-top" alt="Book 3">
-						<div class="card-body">
-							<h5 class="card-title">Book 3</h5>
-							<p class="card-text">Description of Book 3</p>
-						</div>
+				</div>
+				<div class="card swiper-slide">
+					<img src="book-image.jpg" class="card-img-top" alt="Book 3">
+					<div class="card-body">
+						<h5 class="card-title">Book 3</h5>
+						<p class="card-text">Description of Book 3</p>
 					</div>
 				</div>
 			</div>
-			<div class="container swiper">
-				<h2>Finestry</h2>
-				<div class=" swiper-wrapper">
-					<div class="card swiper-slide">
-						<img src="book-image.jpg" class="card-img-top" alt="Book 1">
-						<div class="card-body">
-							<h5 class="card-title">Book 1</h5>
-							<p class="card-text">Description of Book 1</p>
-						</div>
+		</div>
+		<div class="container swiper">
+			<h2>Finestry</h2>
+			<div class=" swiper-wrapper">
+				<div class="card swiper-slide">
+					<img src="book-image.jpg" class="card-img-top" alt="Book 1">
+					<div class="card-body">
+						<h5 class="card-title">Book 1</h5>
+						<p class="card-text">Description of Book 1</p>
 					</div>
-					<div class="card swiper-slide">
-						<img src="book-image.jpg" class="card-img-top" alt="Book 2">
-						<div class="card-body">
-							<h5 class="card-title">Book 2</h5>
-							<p class="card-text">Description of Book 2</p>
-						</div>
-					</div>
-					<div class="card swiper-slide">
-						<img src="book-image.jpg" class="card-img-top" alt="Book 3">
-						<div class="card-body">
-							<h5 class="card-title">Book 3</h5>
-							<p class="card-text">Description of Book 3</p>
-						</div>
-					</div>
-					<div class="card swiper-slide">
-						<img src="book-image.jpg" class="card-img-top" alt="Book 3">
-						<div class="card-body">
-							<h5 class="card-title">Book 3</h5>
-							<p class="card-text">Description of Book 3</p>
-						</div>
-					</div>
-					<div class="card swiper-slide">
-						<img src="book-image.jpg" class="card-img-top" alt="Book 3">
-						<div class="card-body">
-							<h5 class="card-title">Book 3</h5>
-							<p class="card-text">Description of Book 3</p>
-						</div>
-					</div>
-
 				</div>
-				<div class="mt-4" style="display: flex;justify-content: center; width: 100%;">
-					<a href="collection" class="btn btn-primary m-auto">See All</a>
-
+				<div class="card swiper-slide">
+					<img src="book-image.jpg" class="card-img-top" alt="Book 2">
+					<div class="card-body">
+						<h5 class="card-title">Book 2</h5>
+						<p class="card-text">Description of Book 2</p>
+					</div>
 				</div>
+				<div class="card swiper-slide">
+					<img src="book-image.jpg" class="card-img-top" alt="Book 3">
+					<div class="card-body">
+						<h5 class="card-title">Book 3</h5>
+						<p class="card-text">Description of Book 3</p>
+					</div>
+				</div>
+				<div class="card swiper-slide">
+					<img src="book-image.jpg" class="card-img-top" alt="Book 3">
+					<div class="card-body">
+						<h5 class="card-title">Book 3</h5>
+						<p class="card-text">Description of Book 3</p>
+					</div>
+				</div>
+				<div class="card swiper-slide">
+					<img src="book-image.jpg" class="card-img-top" alt="Book 3">
+					<div class="card-body">
+						<h5 class="card-title">Book 3</h5>
+						<p class="card-text">Description of Book 3</p>
+					</div>
+				</div>
+
 			</div>
+			<div class="mt-4" style="display: flex;justify-content: center; width: 100%;">
+				<a href="collection.php" class="btn btn-primary m-auto">See All</a>
 
-
+			</div>
 		</div>
 
+
+
+
 		<!-- Books -->
-		<div class="container">
+		<div class="container mt-4">
 			<div class="book-card-list">
-				<div class="view-options">
+				<!-- <h2 class="ms-2 float-left">Books</h2> -->
+
+				<div class="view-options  ">
 					<button class="view-option-btn active" data-update="list">
 						Lastest Update
 					</button>
@@ -352,8 +355,27 @@
 			const swiper = new Swiper('.swiper', {
 				slidesPerView: '3',
 				spaceBetween: 20,
+				autoplay: {
+					delay: 5000,
+				},
+				breakpoints: {
+					// when window width is >= 320px
+					480: {
+						slidesPerView: 2,
+						spaceBetween: 20
+					},
+					// when window width is >= 480px
+					740: {
+						slidesPerView: 3,
+						spaceBetween: 30
+					},
+					// when window width is >= 640px
+					1040: {
+						slidesPerView: 4,
+						spaceBetween: 40
+					}}
 
-			});		</script>
+				});		</script>
 		<script src="app.js"></script>
 </body>
 
