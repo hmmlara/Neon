@@ -377,6 +377,7 @@
 
 				});		</script>
 		<script src="app.js"></script>
+		<script src="latestBook.js"></script>
 </body>
 
 </html>
