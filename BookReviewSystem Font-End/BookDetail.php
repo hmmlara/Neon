@@ -1,4 +1,22 @@
 <?php
+include_once '../neon/controller/bookController.php';
+include_once __DIR__.('/../controllers/commentController.php');
+$cid=$_GET['id'];
+$book_controller=new BookController();
+$book=$book_controller->getBook($cid);
+$comment_controller=new CommentController();
+$comment=$comment_controller->getAllComments($book['id']);
+
+if(isset($_POST['submit'])){
+	$comment=$_POST['comment'];
+	if($comment!=""){
+		
+	}
+}
+?>
+
+
+<?php
 session_start();
 $email=$_SESSION['user_email'];
 echo $email;
@@ -131,12 +149,14 @@ $comment=$comment_controller->getAllComments($cid);
 
 				<div class="book-info">
 					<h3 class="book-title"><?php echo $book['name'] ?></h3>
+					<h3 class="book-title"><?php echo $book['name'] ?></h3>
 					<div class="book-image">
 						<img
 							src="../img/photos/<?php echo $book['image'] ?>"
 							alt="<?php echo $book['name'] ?>"
 						/>
 					</div>
+					<p class="book-author"><?php echo $book['auther_name'] ?></p>
 					<p class="book-author"><?php echo $book['auther_name'] ?></p>
 					<span class="current-rating">4.5</span>
 
@@ -276,12 +296,12 @@ $comment=$comment_controller->getAllComments($cid);
 				</ul>
 				<button class="load-more-btn btn">Load More</button>
 
-				<form class="comment-form">
+				<form class="comment-form" method="post">
 					<textarea
 						class="form-control"
-						placeholder="Add a comment"
+						placeholder="Add a comment" name="comment"
 					></textarea>
-					<button class="btn btn-primary">Submit</button>
+					<button class="btn btn-primary" name="submit">Submit</button>
 				</form>
 			</div>
 		</div>

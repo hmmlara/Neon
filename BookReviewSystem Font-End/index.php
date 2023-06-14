@@ -127,6 +127,7 @@ include_once('latestBook.php');
 		<div class="container swiper">
 			<h2>Misctry</h2>
 			<div class=" swiper-wrapper">
+				
 				<div class="card swiper-slide">
 					<img src="book-image.jpg" class="card-img-top" alt="Book 1">
 					<div class="card-body">
@@ -352,6 +353,8 @@ include_once('latestBook.php');
 
 				});		</script>
 		<script src="app.js"></script>
+		<script src="latestBook.js"></script>
+		<script src="../neon/js/jquery-3.7.0.min.js"></script>
 </body>
 
 </html>
